@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Dice Rolling Game</h1>
+        <button id="modeToggle">Toggle Mode</button>
+    </div>
+    <div id="instructions">
+        <p>Each Player gets to roll the dice. The first player to reach the score of 20 wins. Player 1 starts the game.</p>
+    </div>
+    <div id="game-container">
+        <div id="player1" class="player">
+            <h2>Player 1</h2>
+            <button id="roll1">Roll Dice</button>
+            <button id="quit1">Quit</button>
+            <p id="score1">Score: 0</p>
+            <p id="message1"></p>
+        </div>
+        <div id="player2" class="player">
+            <h2>Player 2</h2>
+            <button id="roll2">Roll Dice</button>
+            <button id="quit2">Quit</button>
+            <p id="score2">Score: 0</p>
+            <p id="message2"></p>
+        </div>
+    </div>
+
+    <div id="restartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="winnerMessage">Game Over! Would you like to restart the game?</p>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+
+        </div>
+        <script src="game.js"></script>
+        <script>
+            console.log("Script loaded successfully"); // Log when the script is loaded
+            console.log("Button ID: ", document.getElementById('modeToggle').id); // Log the button ID
+        </script>
+    </body>
+</html>
