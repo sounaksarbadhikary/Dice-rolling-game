@@ -2,6 +2,7 @@
 
 Live demo: 
 https://sounaksarbadhikary.github.io/Dice-rolling-game
+
 A simple browser-based two-player dice game built with HTML, CSS and JavaScript. Players take turns rolling a die. The first player to reach a score of 20 or more wins. Player 1 starts the game.
 
 ---
